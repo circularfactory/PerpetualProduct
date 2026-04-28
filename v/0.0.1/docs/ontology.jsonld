@@ -3,11 +3,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/circularfactory/PerpetualProduct#Design"
+      "@id" : "https://w3id.org/circularfactory/Core#Assembly"
+    }, {
+      "@id" : "https://w3id.org/circularfactory/Core#Component"
     } ]
   } ]
 }, {
-  "@id" : "_:genid10",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -17,7 +19,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -31,7 +33,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -41,16 +43,6 @@
     "@id" : "https://w3id.org/circularfactory/PerpetualProduct#containsComponent"
   } ]
 }, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode"
-  } ]
-}, {
   "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minCardinality" : [ {
@@ -58,7 +50,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#Element"
+    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode"
   } ]
 }, {
   "@id" : "_:genid21",
@@ -91,17 +83,7 @@
     "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasVariation"
   } ]
 }, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/circularfactory/Core#Assembly"
-    }, {
-      "@id" : "https://w3id.org/circularfactory/Core#Component"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -110,6 +92,16 @@
       "@id" : "https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation"
     }, {
       "@id" : "https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/circularfactory/PerpetualProduct#Design"
+    }, {
+      "@id" : "https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation"
     } ]
   } ]
 }, {
@@ -166,7 +158,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/circularfactory/Core#Workpiece"
   }, {
-    "@id" : "_:genid18"
+    "@id" : "_:genid19"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/Core#AssemblyType",
@@ -190,7 +182,7 @@
     "@value" : "Component Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid19"
+    "@id" : "_:genid20"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/Core#FinishedProduct",
@@ -256,6 +248,18 @@
     "@id" : "https://w3id.org/circularfactory/Core#ComponentType"
   } ]
 }, {
+  "@id" : "https://w3id.org/circularfactory/Core#hasFinalWorkpiece",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has final workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#FinishedProduct"
+  } ]
+}, {
   "@id" : "https://w3id.org/circularfactory/Core#hasPreviousGeneration",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -266,6 +270,30 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/circularfactory/Core#ProductGeneration"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/Core#hasProductGeneration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#ProductType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has product generation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#ProductGeneration"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/Core#hasProductType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has product type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#ProductType"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct",
@@ -320,31 +348,10 @@
     "@value" : "Carryover Variation"
   } ]
 }, {
-  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#ComposedOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "composed of"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
-  } ]
-}, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#Design",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Design"
-  } ]
-}, {
-  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#Element",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "element"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#Variation"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#Embodiment",
@@ -352,6 +359,12 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Embodiment"
   } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -396,9 +409,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Reference System"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid20"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reference system element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#Variation"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit",
@@ -442,10 +464,10 @@
     "@id" : "_:genid23"
   } ]
 }, {
-  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#adressesStakeholderObjective",
+  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#addressesStakeholderObjective",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "adresses stakeholder objective"
+    "@value" : "addresses stakeholder objective"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#allocateToDegradation",
@@ -493,10 +515,16 @@
     "@id" : "https://w3id.org/circularfactory/Core#Assembly"
   } ]
 }, {
-  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfEnviromentSystem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "composed of enviroment system"
+    "@value" : "composed of Environment system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfType",
@@ -510,9 +538,9 @@
     "@value" : "composed of type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid3"
+    "@id" : "_:genid1"
   }, {
-    "@id" : "_:genid6"
+    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#containsComponent",
@@ -563,6 +591,18 @@
     "@id" : "https://w3id.org/circularfactory/Core#ProductGeneration"
   } ]
 }, {
+  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#embodimentCharacteristicComposedOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "embodiment characteristic composed of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -572,7 +612,7 @@
     "@value" : "embodiment composed of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid10"
+    "@id" : "_:genid11"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf",
@@ -581,11 +621,11 @@
     "@value" : "embodiment degradation composed of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid14"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasAssemblyReliability",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/circularfactory/Core#AssemblyType"
   } ],
@@ -614,18 +654,6 @@
     "@value" : "has failure mode"
   } ]
 }, {
-  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasFinalWorkpiece",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/circularfactory/Core#Workpiece"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has final workpiece"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/circularfactory/Core#FinishedProduct"
-  } ]
-}, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -637,8 +665,14 @@
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasImpactOnAssemblyReliability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has impact on assembly reliability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasAssemblyReliability"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasImpactOnEmbodimentCharacteristic",
@@ -657,30 +691,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/circularfactory/Core#Measurement"
-  } ]
-}, {
-  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasProductGeneration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/circularfactory/Core#ProductType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has product generation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/circularfactory/Core#ProductGeneration"
-  } ]
-}, {
-  "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasProductType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/circularfactory/Core#Product"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has product type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/circularfactory/Core#ProductType"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData",

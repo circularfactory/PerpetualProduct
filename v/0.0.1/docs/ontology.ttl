@@ -93,6 +93,13 @@ xsd:date rdf:type rdfs:Datatype .
                                                          rdfs:label "has component type" .
 
 
+###  https://w3id.org/circularfactory/Core#hasFinalWorkpiece
+<https://w3id.org/circularfactory/Core#hasFinalWorkpiece> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <https://w3id.org/circularfactory/Core#Workpiece> ;
+                                                          rdfs:range <https://w3id.org/circularfactory/Core#FinishedProduct> ;
+                                                          rdfs:label "has final workpiece" .
+
+
 ###  https://w3id.org/circularfactory/Core#hasPreviousGeneration
 <https://w3id.org/circularfactory/Core#hasPreviousGeneration> rdf:type owl:ObjectProperty ;
                                                               rdfs:domain <https://w3id.org/circularfactory/Core#ProductGeneration> ;
@@ -100,20 +107,25 @@ xsd:date rdf:type rdfs:Datatype .
                                                               rdfs:label "has previous generation" .
 
 
-###  https://w3id.org/circularfactory/PerpetualProduct#ComposedOf
-:ComposedOf rdf:type owl:ObjectProperty ;
-            rdfs:range [ rdf:type owl:Class ;
-                         owl:unionOf ( :Design
-                                     )
-                       ] ;
-            rdfs:label "composed of" .
+###  https://w3id.org/circularfactory/Core#hasProductGeneration
+<https://w3id.org/circularfactory/Core#hasProductGeneration> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <https://w3id.org/circularfactory/Core#ProductType> ;
+                                                             rdfs:range <https://w3id.org/circularfactory/Core#ProductGeneration> ;
+                                                             rdfs:label "has product generation" .
 
 
-###  https://w3id.org/circularfactory/PerpetualProduct#Element
-:Element rdf:type owl:ObjectProperty ;
-         rdfs:domain :ReferenceSystem ;
-         rdfs:range :Variation ;
-         rdfs:label "element" .
+###  https://w3id.org/circularfactory/Core#hasProductType
+<https://w3id.org/circularfactory/Core#hasProductType> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <https://w3id.org/circularfactory/Core#Product> ;
+                                                       rdfs:range <https://w3id.org/circularfactory/Core#ProductType> ;
+                                                       rdfs:label "has product type" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement
+:ReferenceSystemElement rdf:type owl:ObjectProperty ;
+                        rdfs:domain :ReferenceSystem ;
+                        rdfs:range :Variation ;
+                        rdfs:label "reference system element" .
 
 
 ###  https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit
@@ -131,9 +143,9 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:label "stakeholder requirement" .
 
 
-###  https://w3id.org/circularfactory/PerpetualProduct#adressesStakeholderObjective
-:adressesStakeholderObjective rdf:type owl:ObjectProperty ;
-                              rdfs:label "adresses stakeholder objective" .
+###  https://w3id.org/circularfactory/PerpetualProduct#addressesStakeholderObjective
+:addressesStakeholderObjective rdf:type owl:ObjectProperty ;
+                               rdfs:label "addresses stakeholder objective" .
 
 
 ###  https://w3id.org/circularfactory/PerpetualProduct#allocateToDegradation
@@ -169,9 +181,11 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:label "composed of assembly" .
 
 
-###  https://w3id.org/circularfactory/PerpetualProduct#composedOfEnviromentSystem
-:composedOfEnviromentSystem rdf:type owl:ObjectProperty ;
-                            rdfs:label "composed of enviroment system" .
+###  https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem
+:composedOfEnvironmentSystem rdf:type owl:ObjectProperty ,
+                                      owl:Class ;
+                             rdfs:domain :composedOfEnvironmentSystem ;
+                             rdfs:range :composedOfEnvironmentSystem .
 
 
 ###  https://w3id.org/circularfactory/PerpetualProduct#composedOfType
@@ -226,6 +240,17 @@ xsd:date rdf:type rdfs:Datatype .
                             rdfs:label "describes product generation" .
 
 
+###  https://w3id.org/circularfactory/PerpetualProduct#embodimentCharacteristicComposedOf
+:embodimentCharacteristicComposedOf rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :EmbodimentCharacteristic ;
+                                    rdfs:range [ rdf:type owl:Class ;
+                                                 owl:unionOf ( :Design
+                                                               :EmbodimentDegradation
+                                                             )
+                                               ] ;
+                                    rdfs:label "embodiment characteristic composed of" .
+
+
 ###  https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf
 :embodimentComposedOf rdf:type owl:ObjectProperty ;
                       rdfs:domain :Embodiment ;
@@ -251,8 +276,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/circularfactory/PerpetualProduct#hasAssemblyReliability
 :hasAssemblyReliability rdf:type owl:ObjectProperty ;
-                        rdfs:domain <https://w3id.org/circularfactory/Core#AssemblyType> ;
-                        rdfs:label "has assembly reliability" .
+                        rdfs:domain <https://w3id.org/circularfactory/Core#AssemblyType> .
 
 
 ###  https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment
@@ -268,13 +292,6 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "has failure mode" .
 
 
-###  https://w3id.org/circularfactory/PerpetualProduct#hasFinalWorkpiece
-:hasFinalWorkpiece rdf:type owl:ObjectProperty ;
-                   rdfs:domain <https://w3id.org/circularfactory/Core#Workpiece> ;
-                   rdfs:range <https://w3id.org/circularfactory/Core#FinishedProduct> ;
-                   rdfs:label "has final workpiece" .
-
-
 ###  https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour
 :hasFunctionalBehaviour rdf:type owl:ObjectProperty ;
                         rdfs:domain <https://w3id.org/circularfactory/Core#AssemblyType> ;
@@ -283,6 +300,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/circularfactory/PerpetualProduct#hasImpactOnAssemblyReliability
 :hasImpactOnAssemblyReliability rdf:type owl:ObjectProperty ;
+                                rdfs:domain :EmbodimentDegradation ;
+                                rdfs:range :hasAssemblyReliability ;
                                 rdfs:label "has impact on assembly reliability" .
 
 
@@ -296,20 +315,6 @@ xsd:date rdf:type rdfs:Datatype .
 :hasMeasurement rdf:type owl:ObjectProperty ;
                 rdfs:range <https://w3id.org/circularfactory/Core#Measurement> ;
                 rdfs:label "has measurement" .
-
-
-###  https://w3id.org/circularfactory/PerpetualProduct#hasProductGeneration
-:hasProductGeneration rdf:type owl:ObjectProperty ;
-                      rdfs:domain <https://w3id.org/circularfactory/Core#ProductType> ;
-                      rdfs:range <https://w3id.org/circularfactory/Core#ProductGeneration> ;
-                      rdfs:label "has product generation" .
-
-
-###  https://w3id.org/circularfactory/PerpetualProduct#hasProductType
-:hasProductType rdf:type owl:ObjectProperty ;
-                rdfs:domain <https://w3id.org/circularfactory/Core#Product> ;
-                rdfs:range <https://w3id.org/circularfactory/Core#ProductType> ;
-                rdfs:label "has product type" .
 
 
 ###  https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData
@@ -490,6 +495,14 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:label "Embodiment" .
 
 
+###  https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic
+:EmbodimentCharacteristic rdf:type owl:Class .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation
+:EmbodimentDegradation rdf:type owl:Class .
+
+
 ###  https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement
 :FunctionalRequirement rdf:type owl:Class ;
                        rdfs:label "Functional Requirement" .
@@ -529,10 +542,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem
 :ReferenceSystem rdf:type owl:Class ;
-                 rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                   owl:onProperty :Element ;
-                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
-                                 ] ;
                  rdfs:label "Reference System" .
 
 
@@ -562,6 +571,14 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "Variation" .
 
 
+###  https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem
+:composedOfEnvironmentSystem rdf:type owl:Class .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasAssemblyReliability
+:hasAssemblyReliability rdf:type owl:Class .
+
+
 #################################################################
 #    Annotations
 #################################################################
@@ -570,6 +587,12 @@ rdfs:comment rdfs:label "comment" .
 
 
 rdfs:label rdfs:label "label" .
+
+
+:composedOfEnvironmentSystem rdfs:label "composed of Environment system" .
+
+
+:hasAssemblyReliability rdfs:label "has assembly reliability" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

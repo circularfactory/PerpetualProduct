@@ -167,6 +167,17 @@
     
 
 
+    <!-- https://w3id.org/circularfactory/Core#hasFinalWorkpiece -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasFinalWorkpiece">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#FinishedProduct"/>
+        <rdfs:label>has final workpiece</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/circularfactory/Core#hasPreviousGeneration -->
 
 
@@ -178,29 +189,35 @@
     
 
 
-    <!-- https://w3id.org/circularfactory/PerpetualProduct#ComposedOf -->
+    <!-- https://w3id.org/circularfactory/Core#hasProductGeneration -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ComposedOf">
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Design"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label>composed of</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasProductGeneration">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+        <rdfs:label>has product generation</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/circularfactory/PerpetualProduct#Element -->
+    <!-- https://w3id.org/circularfactory/Core#hasProductType -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Element">
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasProductType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Product"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
+        <rdfs:label>has product type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement">
         <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem"/>
         <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Variation"/>
-        <rdfs:label>element</rdfs:label>
+        <rdfs:label>reference system element</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -232,11 +249,11 @@
     
 
 
-    <!-- https://w3id.org/circularfactory/PerpetualProduct#adressesStakeholderObjective -->
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#addressesStakeholderObjective -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#adressesStakeholderObjective">
-        <rdfs:label>adresses stakeholder objective</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#addressesStakeholderObjective">
+        <rdfs:label>addresses stakeholder objective</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -298,12 +315,14 @@
     
 
 
-    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfEnviromentSystem -->
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfEnviromentSystem">
-        <rdfs:label>composed of enviroment system</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem"/>
+    </owl:Class>
     
 
 
@@ -393,6 +412,24 @@
     
 
 
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#embodimentCharacteristicComposedOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#embodimentCharacteristicComposedOf">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Design"/>
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>embodiment characteristic composed of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf -->
 
 
@@ -435,7 +472,6 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasAssemblyReliability">
         <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#AssemblyType"/>
-        <rdfs:label>has assembly reliability</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -461,17 +497,6 @@
     
 
 
-    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasFinalWorkpiece -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasFinalWorkpiece">
-        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
-        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#FinishedProduct"/>
-        <rdfs:label>has final workpiece</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour -->
 
 
@@ -486,6 +511,8 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasImpactOnAssemblyReliability">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasAssemblyReliability"/>
         <rdfs:label>has impact on assembly reliability</rdfs:label>
     </owl:ObjectProperty>
     
@@ -507,28 +534,6 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasMeasurement">
         <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Measurement"/>
         <rdfs:label>has measurement</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasProductGeneration -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasProductGeneration">
-        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
-        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
-        <rdfs:label>has product generation</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasProductType -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasProductType">
-        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Product"/>
-        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
-        <rdfs:label>has product type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -851,6 +856,20 @@
     
 
 
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic"/>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation"/>
+    
+
+
     <!-- https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement -->
 
 
@@ -921,12 +940,6 @@
 
 
     <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Element"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label>Reference System</rdfs:label>
     </owl:Class>
     
@@ -975,6 +988,20 @@
     
 
 
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem"/>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasAssemblyReliability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasAssemblyReliability"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -989,6 +1016,12 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:label>label</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfEnvironmentSystem">
+        <rdfs:label>composed of Environment system</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasAssemblyReliability">
+        <rdfs:label>has assembly reliability</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
