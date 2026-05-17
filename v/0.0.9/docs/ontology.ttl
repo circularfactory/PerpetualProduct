@@ -1,0 +1,1013 @@
+@prefix : <https://w3id.org/circularfactory/PerpetualProduct#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/circularfactory/PerpetualProduct#> .
+
+<https://w3id.org/circularfactory/PerpetualProduct> rdf:type owl:Ontology ;
+                                                     owl:versionIRI <https://w3id.org/circularfactory/PerpetualProduct/0.0.9> ;
+                                                     <http://purl.org/dc/terms/created> "2026-04-28"^^xsd:date ;
+                                                     <http://purl.org/dc/terms/creator> <https://orcid.org/0009-0002-4321-3391> ;
+                                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                     <http://purl.org/dc/terms/title> "The Circular Factory Product Ontology"@en ;
+                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "product" ;
+                                                     <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                                     rdfs:comment "The product ontology defines central concepts and relations of the product within the circular factory."@en ;
+                                                     rdfs:label "Circular Factory Product Ontology"@en ;
+                                                     owl:versionInfo "0.0.9" ;
+                                                     <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/circularfactory/Core#hasAssemblyType
+<https://w3id.org/circularfactory/Core#hasAssemblyType> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <https://w3id.org/circularfactory/Core#Assembly> ;
+                                                        rdfs:range <https://w3id.org/circularfactory/Core#AssemblyType> ;
+                                                        rdfs:label "has assembly type" .
+
+
+###  https://w3id.org/circularfactory/Core#hasComponentType
+<https://w3id.org/circularfactory/Core#hasComponentType> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <https://w3id.org/circularfactory/Core#Component> ;
+                                                         rdfs:range <https://w3id.org/circularfactory/Core#ComponentType> ;
+                                                         rdfs:label "has component type" .
+
+
+###  https://w3id.org/circularfactory/Core#hasFinalWorkpiece
+<https://w3id.org/circularfactory/Core#hasFinalWorkpiece> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <https://w3id.org/circularfactory/Core#Workpiece> ;
+                                                          rdfs:range <https://w3id.org/circularfactory/Core#FinishedProduct> ;
+                                                          rdfs:label "has final workpiece" .
+
+
+###  https://w3id.org/circularfactory/Core#hasPreviousGeneration
+<https://w3id.org/circularfactory/Core#hasPreviousGeneration> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <https://w3id.org/circularfactory/Core#ProductGeneration> ;
+                                                              rdfs:range <https://w3id.org/circularfactory/Core#ProductGeneration> ;
+                                                              rdfs:label "has previous generation" .
+
+
+###  https://w3id.org/circularfactory/Core#hasProductGeneration
+<https://w3id.org/circularfactory/Core#hasProductGeneration> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <https://w3id.org/circularfactory/Core#ProductType> ;
+                                                             rdfs:range <https://w3id.org/circularfactory/Core#ProductGeneration> ;
+                                                             rdfs:label "has product generation" .
+
+
+###  https://w3id.org/circularfactory/Core#hasProductType
+<https://w3id.org/circularfactory/Core#hasProductType> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <https://w3id.org/circularfactory/Core#Product> ;
+                                                       rdfs:range <https://w3id.org/circularfactory/Core#ProductType> ;
+                                                       rdfs:label "has product type" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement
+:allocateTestModelToSystemElement rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :ValidationSystem ;
+                                  rdfs:range :SystemElement ;
+                                  rdfs:label "allocate test model to system element" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation
+:allocateToEmbodimentDegradation rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :FailureMode ;
+                                 rdfs:range :EmbodimentDegradation ;
+                                 rdfs:label "allocate to embodiment degradation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour
+:allocateToExpectedBehaviour rdf:type owl:ObjectProperty ;
+                             rdfs:domain :Function ;
+                             rdfs:range :ExpectedBehaviour ;
+                             rdfs:label "allocate to expected behaviour" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement
+:allocateToSystemElement rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Function ;
+                         rdfs:range :SystemElement ;
+                         rdfs:label "allocate to system element" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed
+:allocateToValidationNeed rdf:type owl:ObjectProperty ;
+                          rdfs:domain :UseCase ;
+                          rdfs:range :ValidationNeed ;
+                          rdfs:label "allocate to validation need" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#composedOfAssembly
+:composedOfAssembly rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://w3id.org/circularfactory/Core#Assembly> ;
+                    rdfs:range <https://w3id.org/circularfactory/Core#Assembly> ;
+                    rdfs:label "composed of assembly" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation
+:composedOfExpectation rdf:type owl:ObjectProperty ;
+                       rdfs:domain :StakeholderNeed ;
+                       rdfs:range :UserAndCustomerScenario ;
+                       rdfs:label "composed of expectation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#composedOfItem
+:composedOfItem rdf:type owl:ObjectProperty ;
+                rdfs:domain :SystemElement ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( <https://w3id.org/circularfactory/Core#Assembly>
+                                           <https://w3id.org/circularfactory/Core#Component>
+                                         )
+                           ] ;
+                rdfs:label "composed of item" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement
+:composedOfReferenceSystemElement rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :ReferenceSystem ;
+                                  rdfs:range :ReferenceSystemElement ;
+                                  rdfs:label "composed of reference system element" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit
+:composedOfStakeholderBenefit rdf:type owl:ObjectProperty ;
+                              rdfs:domain :StakeholderNeed ;
+                              rdfs:range :StakeholderBenefit ;
+                              rdfs:label "composed of stakeholder benefit" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext
+:composedOfSystemContext rdf:type owl:ObjectProperty ;
+                         rdfs:domain :UserAndCustomerScenario ;
+                         rdfs:range :SystemContext ;
+                         rdfs:label "composed of system context" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase
+:composedOfUseCase rdf:type owl:ObjectProperty ;
+                   rdfs:domain :UserAndCustomerScenario ;
+                   rdfs:range :UseCase ;
+                   rdfs:label "composed of use case" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#composedOfVariation
+:composedOfVariation rdf:type owl:ObjectProperty ;
+                     rdfs:domain :VariationSet ;
+                     rdfs:range :Variation ;
+                     rdfs:label "composed of variation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition
+:deriveFromBoundaryCondition rdf:type owl:ObjectProperty ;
+                             rdfs:domain :SystemRequirement ;
+                             rdfs:range :BoundaryCondition ;
+                             rdfs:label "derive from boundary condition" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement
+:deriveFromStakeholderRequirement rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :SystemRequirement ;
+                                  rdfs:range :StakeholderObjective ;
+                                  rdfs:label "derive from stakeholder requirement" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour
+:deriveFunctionalBehaviour rdf:type owl:ObjectProperty ;
+                           rdfs:domain :ValidationSystem ;
+                           rdfs:range :FunctionalBehaviour ;
+                           rdfs:label "derive functional behaviour" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective
+:deriveStakeholderObjective rdf:type owl:ObjectProperty ;
+                            rdfs:domain :StakeholderNeed ;
+                            rdfs:range :StakeholderObjective ;
+                            rdfs:label "derive stakeholder objective" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf
+:embodimentComposedOf rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Embodiment ;
+                      rdfs:range [ rdf:type owl:Class ;
+                                   owl:unionOf ( :Geometry
+                                                 :Material
+                                               )
+                                 ] ;
+                      rdfs:label "embodiment composed of" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf
+:embodimentDegradationComposedOf rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :EmbodimentDegradation ;
+                                 rdfs:range [ rdf:type owl:Class ;
+                                              owl:unionOf ( :LoadHistory
+                                                            :ManufacturingHistory
+                                                            :ReferenceData
+                                                            :UsageHistory
+                                                          )
+                                            ] ;
+                                 rdfs:label "embodiment degradation composed of" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasComponent
+:hasComponent rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://w3id.org/circularfactory/Core#Assembly> ;
+              rdfs:range <https://w3id.org/circularfactory/Core#Component> ;
+              rdfs:label "has component" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasComponentType
+:hasComponentType rdf:type owl:ObjectProperty ;
+                  rdfs:domain <https://w3id.org/circularfactory/Core#AssemblyType> ;
+                  rdfs:range <https://w3id.org/circularfactory/Core#ComponentType> ;
+                  rdfs:label "has component type" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment
+:hasEmbodiment rdf:type owl:ObjectProperty ;
+               rdfs:domain <https://w3id.org/circularfactory/Core#ComponentType> ;
+               rdfs:range :Embodiment ;
+               rdfs:label "has embodiment" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation
+:hasEmbodimentDegradation rdf:type owl:ObjectProperty ;
+                          rdfs:domain :Embodiment ;
+                          rdfs:range :EmbodimentDegradation ;
+                          rdfs:label "has embodiment degradation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode
+:hasFailureMode rdf:type owl:ObjectProperty ;
+                rdfs:domain <https://w3id.org/circularfactory/Core#ComponentType> ;
+                rdfs:range :FailureMode ;
+                rdfs:label "has failure mode" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour
+:hasFunctionalBehaviour rdf:type owl:ObjectProperty ;
+                        rdfs:domain <https://w3id.org/circularfactory/Core#AssemblyType> ;
+                        rdfs:range :FunctionalBehaviour ;
+                        rdfs:label "has functional behaviour" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData
+:hasReferenceData rdf:type owl:ObjectProperty ;
+                  rdfs:domain <https://w3id.org/circularfactory/Core#Product> ;
+                  rdfs:range :ReferenceData ;
+                  rdfs:label "has reference data" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement
+:hasReferenceSystemElement rdf:type owl:ObjectProperty ;
+                           rdfs:domain :Variation ;
+                           rdfs:range :ReferenceSystemElement ;
+                           rdfs:label "has reference system element" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction
+:hasReliabilityPrediction rdf:type owl:ObjectProperty ;
+                          rdfs:domain <https://w3id.org/circularfactory/Core#Workpiece> ;
+                          rdfs:range :ReliabilityPrediction ;
+                          rdfs:label "has reliability prediction" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder
+:hasStakeholder rdf:type owl:ObjectProperty ;
+                rdfs:domain :UserAndCustomerScenario ;
+                rdfs:range :Stakeholder ;
+                rdfs:label "has stakeholder" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed
+:hasStakeholderNeed rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Stakeholder ;
+                    rdfs:range :StakeholderNeed ;
+                    rdfs:label "has stakeholder need" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement
+:hasSystemElement rdf:type owl:ObjectProperty ;
+                  rdfs:domain <https://w3id.org/circularfactory/Core#ProductType> ;
+                  rdfs:range :SystemElement ;
+                  rdfs:label "has system element" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed
+:hasValidationNeed rdf:type owl:ObjectProperty ;
+                   rdfs:domain :ValidationSystem ;
+                   rdfs:range :ValidationNeed ;
+                   rdfs:label "has validation need" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#hasVariation
+:hasVariation rdf:type owl:ObjectProperty ;
+              rdfs:domain :SystemElement ;
+              rdfs:range :Variation ;
+              rdfs:label "has variation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic
+:isDefinedByEmbodimentCharacteristic rdf:type owl:ObjectProperty ;
+                                     rdfs:domain :EmbodimentProperty ;
+                                     rdfs:range :EmbodimentCharacteristic ;
+                                     rdfs:label "is defined by embodiment characteristic" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty
+:isDefinedByEmbodimentProperty rdf:type owl:ObjectProperty ;
+                               rdfs:domain :Embodiment ;
+                               rdfs:range :EmbodimentProperty ;
+                               rdfs:label "is defined by embodiment property" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase
+:isRealizedInUseCase rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Function ;
+                     rdfs:range :UseCase ;
+                     rdfs:label "is realized in use case" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#isTracedFromSystemElement
+:isTracedFromSystemElement rdf:type owl:ObjectProperty ;
+                           owl:inverseOf :traceToSystemRequirement ;
+                           rdfs:label "is traced from system element" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#isVerifiedAndValidatedBy
+:isVerifiedAndValidatedBy rdf:type owl:ObjectProperty ;
+                          owl:inverseOf :verifyAndValidateSystemRequirement ;
+                          rdfs:label "is verified and validated by" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#referenceSystemElementHasPreviousGeneration
+:referenceSystemElementHasPreviousGeneration rdf:type owl:ObjectProperty ;
+                                             rdfs:domain :ReferenceSystemElement ;
+                                             rdfs:range <https://w3id.org/circularfactory/Core#ProductGeneration> ;
+                                             rdfs:label "reference system element has previous generation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration
+:referenceSystemHasProductGeneration rdf:type owl:ObjectProperty ;
+                                     rdfs:domain :ReferenceSystem ;
+                                     rdfs:range <https://w3id.org/circularfactory/Core#ProductGeneration> ;
+                                     rdfs:label "reference system has product generation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective
+:refineStakeholderObjective rdf:type owl:ObjectProperty ;
+                            rdfs:domain :UseCase ;
+                            rdfs:range :StakeholderObjective ;
+                            rdfs:label "refine stakeholder objective" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour
+:satisfyExpectedBehaviour rdf:type owl:ObjectProperty ;
+                          rdfs:domain :FunctionalBehaviour ;
+                          rdfs:range :ExpectedBehaviour ;
+                          rdfs:label "satisfy expected behaviour" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement
+:satisfyFunctionalRequirement rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Function ;
+                              rdfs:range :FunctionalRequirement ;
+                              rdfs:label "satisfy functional requirement" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement
+:satisfyNonFunctionalRequirement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :SystemElement ;
+                                 rdfs:range :NonFunctionalRequirement ;
+                                 rdfs:label "satisfy non functional requirement" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration
+:systemElementHasProductGeneration rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :SystemElement ;
+                                   rdfs:range <https://w3id.org/circularfactory/Core#ProductGeneration> ;
+                                   rdfs:label "system element has product generation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement
+:traceBehaviourToSystemRequirement rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :ExpectedBehaviour ;
+                                   rdfs:range :SystemRequirement ;
+                                   rdfs:label "trace behaviour to system requirement" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic
+:traceToEmbodimentCharacteristic rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :Variation ;
+                                 rdfs:range :EmbodimentCharacteristic ;
+                                 rdfs:label "trace to embodiment characteristic" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation
+:traceToEmbodimentDegradation rdf:type owl:ObjectProperty ;
+                              rdfs:domain :ReliabilityPrediction ;
+                              rdfs:range :EmbodimentDegradation ;
+                              rdfs:label "trace to embodiment degradation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode
+:traceToFailureMode rdf:type owl:ObjectProperty ;
+                    rdfs:domain :ReliabilityPrediction ;
+                    rdfs:range :FailureMode ;
+                    rdfs:label "trace to failure mode" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder
+:traceToStakeholder rdf:type owl:ObjectProperty ;
+                    rdfs:domain :BoundaryCondition ;
+                    rdfs:range :Stakeholder ;
+                    rdfs:label "trace to stakeholder" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext
+:traceToSystemContext rdf:type owl:ObjectProperty ;
+                      rdfs:domain :BoundaryCondition ;
+                      rdfs:range :SystemContext ;
+                      rdfs:label "trace to system context" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement
+:traceToSystemRequirement rdf:type owl:ObjectProperty ;
+                          rdfs:domain :SystemElement ;
+                          rdfs:range :SystemRequirement ;
+                          rdfs:label "trace to system requirement" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario
+:traceToUserAndCustomerScenario rdf:type owl:ObjectProperty ;
+                                rdfs:domain :ReliabilityPrediction ;
+                                rdfs:range :UserAndCustomerScenario ;
+                                rdfs:label "trace to user and customer scenario" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement
+:verifyAndValidateSystemRequirement rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :ValidationSystem ;
+                                    rdfs:range :SystemRequirement ;
+                                    rdfs:label "verify and validate system requirement" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty ;
+                                 rdfs:label "name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/circularfactory/Core#Assembly
+<https://w3id.org/circularfactory/Core#Assembly> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/circularfactory/Core#Workpiece> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasComponent ;
+                                                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <https://w3id.org/circularfactory/Core#hasAssemblyType> ;
+                                                                   owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                 ] ;
+                                                 owl:disjointWith <https://w3id.org/circularfactory/Core#Component> ;
+                                                 rdfs:label "Assembly" .
+
+
+###  https://w3id.org/circularfactory/Core#AssemblyType
+<https://w3id.org/circularfactory/Core#AssemblyType> rdf:type owl:Class ;
+                                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasComponentType ;
+                                                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasFunctionalBehaviour ;
+                                                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                     ] ;
+                                                     owl:disjointWith <https://w3id.org/circularfactory/Core#ComponentType> ;
+                                                     rdfs:label "Assembly Type" .
+
+
+###  https://w3id.org/circularfactory/Core#Component
+<https://w3id.org/circularfactory/Core#Component> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://w3id.org/circularfactory/Core#Workpiece> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <https://w3id.org/circularfactory/Core#hasComponentType> ;
+                                                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                  ] ;
+                                                  rdfs:label "Component" .
+
+
+###  https://w3id.org/circularfactory/Core#ComponentType
+<https://w3id.org/circularfactory/Core#ComponentType> rdf:type owl:Class ;
+                                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :hasFailureMode ;
+                                                                        owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                      ] ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :hasEmbodiment ;
+                                                                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                      ] ;
+                                                      rdfs:label "Component Type" .
+
+
+###  https://w3id.org/circularfactory/Core#FinishedProduct
+<https://w3id.org/circularfactory/Core#FinishedProduct> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://w3id.org/circularfactory/Core#Product> ;
+                                                        rdfs:label "Finished Product" .
+
+
+###  https://w3id.org/circularfactory/Core#Product
+<https://w3id.org/circularfactory/Core#Product> rdf:type owl:Class ;
+                                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :hasReferenceData ;
+                                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/circularfactory/Core#hasProductType> ;
+                                                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                ] ;
+                                                rdfs:label "Product" .
+
+
+###  https://w3id.org/circularfactory/Core#ProductGeneration
+<https://w3id.org/circularfactory/Core#ProductGeneration> rdf:type owl:Class ;
+                                                          rdfs:label "Product Generation" .
+
+
+###  https://w3id.org/circularfactory/Core#ProductType
+<https://w3id.org/circularfactory/Core#ProductType> rdf:type owl:Class ;
+                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasSystemElement ;
+                                                                      owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <https://w3id.org/circularfactory/Core#hasProductGeneration> ;
+                                                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                    ] ;
+                                                    rdfs:label "Product Type" .
+
+
+###  https://w3id.org/circularfactory/Core#Workpiece
+<https://w3id.org/circularfactory/Core#Workpiece> rdf:type owl:Class ;
+                                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <https://w3id.org/circularfactory/Core#hasFinalWorkpiece> ;
+                                                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :hasReliabilityPrediction ;
+                                                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                  ] ;
+                                                  rdfs:label "Workpiece" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#AttributeVariation
+:AttributeVariation rdf:type owl:Class ;
+                    rdfs:subClassOf :Variation ;
+                    rdfs:label "Attribute Variation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition
+:BoundaryCondition rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :traceToStakeholder ;
+                                     owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :traceToSystemContext ;
+                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                   ] ;
+                   rdfs:label "Boundary Condition" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation
+:CarryoverVariation rdf:type owl:Class ;
+                    rdfs:subClassOf :Variation ;
+                    rdfs:label "Carryover Variation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#Embodiment
+:Embodiment rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :embodimentComposedOf ;
+                              owl:minCardinality "1"^^xsd:nonNegativeInteger
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isDefinedByEmbodimentProperty ;
+                              owl:minCardinality "1"^^xsd:nonNegativeInteger
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasEmbodimentDegradation ;
+                              owl:cardinality "1"^^xsd:nonNegativeInteger
+                            ] ;
+            rdfs:label "Embodiment" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic
+:EmbodimentCharacteristic rdf:type owl:Class ;
+                          rdfs:label "Embodiment Characteristic" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation
+:EmbodimentDegradation rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty :embodimentDegradationComposedOf ;
+                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                       ] ;
+                       rdfs:label "Embodiment Degradation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty
+:EmbodimentProperty rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :isDefinedByEmbodimentCharacteristic ;
+                                      owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                    ] ;
+                    rdfs:label "Embodiment Property" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour
+:ExpectedBehaviour rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :traceBehaviourToSystemRequirement ;
+                                     owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                   ] ;
+                   owl:disjointWith :ValidationSystem ;
+                   rdfs:label "Expected Behaviour" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#FailureMode
+:FailureMode rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :allocateToEmbodimentDegradation ;
+                               owl:minCardinality "1"^^xsd:nonNegativeInteger
+                             ] ;
+             rdfs:label "Failure Mode" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#Function
+:Function rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :allocateToExpectedBehaviour ;
+                            owl:minCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :allocateToSystemElement ;
+                            owl:minCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isRealizedInUseCase ;
+                            owl:minCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :satisfyFunctionalRequirement ;
+                            owl:minCardinality "1"^^xsd:nonNegativeInteger
+                          ] ;
+          rdfs:label "Function" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour
+:FunctionalBehaviour rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty :satisfyExpectedBehaviour ;
+                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                     ] ;
+                     rdfs:label "Functional Behaviour" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement
+:FunctionalRequirement rdf:type owl:Class ;
+                       rdfs:subClassOf :SystemRequirement ;
+                       owl:disjointWith :NonFunctionalRequirement ;
+                       rdfs:label "Functional Requirement" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#Geometry
+:Geometry rdf:type owl:Class ;
+          rdfs:label "Geometry" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#LoadHistory
+:LoadHistory rdf:type owl:Class ;
+             rdfs:label "Load History" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory
+:ManufacturingHistory rdf:type owl:Class ;
+                      rdfs:label "Manufacturing History" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#Material
+:Material rdf:type owl:Class ;
+          rdfs:label "Material" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement
+:NonFunctionalRequirement rdf:type owl:Class ;
+                          rdfs:subClassOf :SystemRequirement ;
+                          rdfs:label "Non Functional Requirement" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation
+:PrincipleVariation rdf:type owl:Class ;
+                    rdfs:subClassOf :Variation ;
+                    rdfs:label "Principle Variation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#ReferenceData
+:ReferenceData rdf:type owl:Class ;
+               rdfs:label "Reference Data" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem
+:ReferenceSystem rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :composedOfReferenceSystemElement ;
+                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :referenceSystemHasProductGeneration ;
+                                   owl:cardinality "1"^^xsd:nonNegativeInteger
+                                 ] ;
+                 rdfs:label "Reference System" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement
+:ReferenceSystemElement rdf:type owl:Class ;
+                        rdfs:label "Reference System Element" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction
+:ReliabilityPrediction rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty :traceToFailureMode ;
+                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :traceToUserAndCustomerScenario ;
+                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :traceToEmbodimentDegradation ;
+                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                       ] ;
+                       rdfs:label "Reliability Prediction" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#Stakeholder
+:Stakeholder rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasStakeholderNeed ;
+                               owl:minCardinality "1"^^xsd:nonNegativeInteger
+                             ] ;
+             rdfs:label "Stakeholder" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit
+:StakeholderBenefit rdf:type owl:Class ;
+                    rdfs:label "Stakeholder Benefit" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed
+:StakeholderNeed rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :composedOfExpectation ;
+                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :composedOfStakeholderBenefit ;
+                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :deriveStakeholderObjective ;
+                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                 ] ;
+                 rdfs:label "Stakeholder Need" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective
+:StakeholderObjective rdf:type owl:Class ;
+                      rdfs:label "Stakeholder Objective" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#SystemContext
+:SystemContext rdf:type owl:Class ;
+               rdfs:label "System Context" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#SystemElement
+:SystemElement rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :composedOfItem ;
+                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasVariation ;
+                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :satisfyNonFunctionalRequirement ;
+                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :traceToSystemRequirement ;
+                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :systemElementHasProductGeneration ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] ;
+               rdfs:label "System Element" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement
+:SystemRequirement rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :deriveFromBoundaryCondition ;
+                                     owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :deriveFromStakeholderRequirement ;
+                                     owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                   ] ;
+                   rdfs:label "System Requirement" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#UsageHistory
+:UsageHistory rdf:type owl:Class ;
+              rdfs:label "Usage History" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#UseCase
+:UseCase rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :allocateToValidationNeed ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :refineStakeholderObjective ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:label "Use Case" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario
+:UserAndCustomerScenario rdf:type owl:Class ;
+                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                           owl:onProperty :composedOfUseCase ;
+                                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasStakeholder ;
+                                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :composedOfSystemContext ;
+                                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                                         ] ;
+                         rdfs:label "User And Customer Scenario" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed
+:ValidationNeed rdf:type owl:Class ;
+                rdfs:label "Validation Need" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem
+:ValidationSystem rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :allocateTestModelToSystemElement ;
+                                    owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :deriveFunctionalBehaviour ;
+                                    owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasValidationNeed ;
+                                    owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :verifyAndValidateSystemRequirement ;
+                                    owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                  ] ;
+                  rdfs:label "Validation System" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#Variation
+:Variation rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasReferenceSystemElement ;
+                             owl:minCardinality "1"^^xsd:nonNegativeInteger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :traceToEmbodimentCharacteristic ;
+                             owl:minCardinality "1"^^xsd:nonNegativeInteger
+                           ] ;
+           rdfs:label "Variation" .
+
+
+###  https://w3id.org/circularfactory/PerpetualProduct#VariationSet
+:VariationSet rdf:type owl:Class ;
+              rdfs:subClassOf :Variation ;
+              rdfs:label "Variation Set" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+rdfs:comment rdfs:label "comment" .
+
+
+rdfs:label rdfs:label "label" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AttributeVariation
+                :CarryoverVariation
+                :PrincipleVariation
+                :VariationSet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :LoadHistory
+                :ManufacturingHistory
+                :ReferenceData
+                :UsageHistory
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

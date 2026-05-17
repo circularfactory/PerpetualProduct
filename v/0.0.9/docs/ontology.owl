@@ -1,0 +1,1655 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/circularfactory/PerpetualProduct#"
+     xml:base="https://w3id.org/circularfactory/PerpetualProduct"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/circularfactory/PerpetualProduct">
+        <owl:versionIRI rdf:resource="https://w3id.org/circularfactory/PerpetualProduct/0.0.9"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0009-0002-4321-3391"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">The Circular Factory Product Ontology</terms:title>
+        <vann:preferredNamespacePrefix>product</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#"/>
+        <rdfs:comment xml:lang="en">The product ontology defines central concepts and relations of the product within the circular factory.</rdfs:comment>
+        <rdfs:label xml:lang="en">Circular Factory Product Ontology</rdfs:label>
+        <owl:versionInfo>0.0.9</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasAssemblyType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasAssemblyType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Assembly"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#AssemblyType"/>
+        <rdfs:label>has assembly type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasComponentType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasComponentType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ComponentType"/>
+        <rdfs:label>has component type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasFinalWorkpiece -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasFinalWorkpiece">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#FinishedProduct"/>
+        <rdfs:label>has final workpiece</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasPreviousGeneration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasPreviousGeneration">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+        <rdfs:label>has previous generation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasProductGeneration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasProductGeneration">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+        <rdfs:label>has product generation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasProductType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasProductType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Product"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
+        <rdfs:label>has product type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemElement"/>
+        <rdfs:label>allocate test model to system element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#FailureMode"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation"/>
+        <rdfs:label>allocate to embodiment degradation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Function"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour"/>
+        <rdfs:label>allocate to expected behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Function"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemElement"/>
+        <rdfs:label>allocate to system element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#UseCase"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed"/>
+        <rdfs:label>allocate to validation need</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfAssembly -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfAssembly">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Assembly"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Assembly"/>
+        <rdfs:label>composed of assembly</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario"/>
+        <rdfs:label>composed of expectation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfItem -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfItem">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemElement"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#Assembly"/>
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#Component"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>composed of item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement"/>
+        <rdfs:label>composed of reference system element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit"/>
+        <rdfs:label>composed of stakeholder benefit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemContext"/>
+        <rdfs:label>composed of system context</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#UseCase"/>
+        <rdfs:label>composed of use case</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#composedOfVariation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#composedOfVariation">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#VariationSet"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Variation"/>
+        <rdfs:label>composed of variation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition"/>
+        <rdfs:label>derive from boundary condition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective"/>
+        <rdfs:label>derive from stakeholder requirement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour"/>
+        <rdfs:label>derive functional behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective"/>
+        <rdfs:label>derive stakeholder objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Embodiment"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Geometry"/>
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Material"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>embodiment composed of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#LoadHistory"/>
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory"/>
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ReferenceData"/>
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#UsageHistory"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>embodiment degradation composed of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasComponent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasComponent">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Assembly"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Component"/>
+        <rdfs:label>has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasComponentType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasComponentType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#AssemblyType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ComponentType"/>
+        <rdfs:label>has component type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#ComponentType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Embodiment"/>
+        <rdfs:label>has embodiment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Embodiment"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation"/>
+        <rdfs:label>has embodiment degradation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#ComponentType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#FailureMode"/>
+        <rdfs:label>has failure mode</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#AssemblyType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour"/>
+        <rdfs:label>has functional behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Product"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReferenceData"/>
+        <rdfs:label>has reference data</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Variation"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement"/>
+        <rdfs:label>has reference system element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction"/>
+        <rdfs:label>has reliability prediction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Stakeholder"/>
+        <rdfs:label>has stakeholder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Stakeholder"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed"/>
+        <rdfs:label>has stakeholder need</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemElement"/>
+        <rdfs:label>has system element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed"/>
+        <rdfs:label>has validation need</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#hasVariation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#hasVariation">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Variation"/>
+        <rdfs:label>has variation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic"/>
+        <rdfs:label>is defined by embodiment characteristic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Embodiment"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty"/>
+        <rdfs:label>is defined by embodiment property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Function"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#UseCase"/>
+        <rdfs:label>is realized in use case</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#isTracedFromSystemElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#isTracedFromSystemElement">
+        <owl:inverseOf rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement"/>
+        <rdfs:label>is traced from system element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#isVerifiedAndValidatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#isVerifiedAndValidatedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement"/>
+        <rdfs:label>is verified and validated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#referenceSystemElementHasPreviousGeneration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#referenceSystemElementHasPreviousGeneration">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+        <rdfs:label>reference system element has previous generation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+        <rdfs:label>reference system has product generation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#UseCase"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective"/>
+        <rdfs:label>refine stakeholder objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour"/>
+        <rdfs:label>satisfy expected behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Function"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement"/>
+        <rdfs:label>satisfy functional requirement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement"/>
+        <rdfs:label>satisfy non functional requirement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+        <rdfs:label>system element has product generation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement"/>
+        <rdfs:label>trace behaviour to system requirement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Variation"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic"/>
+        <rdfs:label>trace to embodiment characteristic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation"/>
+        <rdfs:label>trace to embodiment degradation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#FailureMode"/>
+        <rdfs:label>trace to failure mode</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Stakeholder"/>
+        <rdfs:label>trace to stakeholder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemContext"/>
+        <rdfs:label>trace to system context</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement"/>
+        <rdfs:label>trace to system requirement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario"/>
+        <rdfs:label>trace to user and customer scenario</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement"/>
+        <rdfs:label>verify and validate system requirement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Assembly -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Assembly">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasComponent"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasAssemblyType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/circularfactory/Core#Component"/>
+        <rdfs:label>Assembly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#AssemblyType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#AssemblyType">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasComponentType"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/circularfactory/Core#ComponentType"/>
+        <rdfs:label>Assembly Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Component -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Component">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasComponentType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#ComponentType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ComponentType">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Component Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#FinishedProduct -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#FinishedProduct">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Product"/>
+        <rdfs:label>Finished Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Product -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Product">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasProductType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#ProductGeneration -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ProductGeneration">
+        <rdfs:label>Product Generation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#ProductType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ProductType">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasProductGeneration"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Product Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Workpiece -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Workpiece">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasFinalWorkpiece"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Workpiece</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#AttributeVariation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#AttributeVariation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Variation"/>
+        <rdfs:label>Attribute Variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Boundary Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Variation"/>
+        <rdfs:label>Carryover Variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#Embodiment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Embodiment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Embodiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic">
+        <rdfs:label>Embodiment Characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Embodiment Degradation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Embodiment Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem"/>
+        <rdfs:label>Expected Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#FailureMode -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#FailureMode">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Failure Mode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#Function -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Function">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Functional Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement"/>
+        <rdfs:label>Functional Requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#Geometry -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Geometry">
+        <rdfs:label>Geometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#LoadHistory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#LoadHistory">
+        <rdfs:label>Load History</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory">
+        <rdfs:label>Manufacturing History</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#Material -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Material">
+        <rdfs:label>Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement"/>
+        <rdfs:label>Non Functional Requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Variation"/>
+        <rdfs:label>Principle Variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#ReferenceData -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ReferenceData">
+        <rdfs:label>Reference Data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Reference System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement">
+        <rdfs:label>Reference System Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Reliability Prediction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#Stakeholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Stakeholder">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Stakeholder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit">
+        <rdfs:label>Stakeholder Benefit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Stakeholder Need</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective">
+        <rdfs:label>Stakeholder Objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#SystemContext -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#SystemContext">
+        <rdfs:label>System Context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#SystemElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#SystemElement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#composedOfItem"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasVariation"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>System Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>System Requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#UsageHistory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#UsageHistory">
+        <rdfs:label>Usage History</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#UseCase -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#UseCase">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Use Case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>User And Customer Scenario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed">
+        <rdfs:label>Validation Need</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Validation System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#Variation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#Variation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/PerpetualProduct#VariationSet -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/PerpetualProduct#VariationSet">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/PerpetualProduct#Variation"/>
+        <rdfs:label>Variation Set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:label>comment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#AttributeVariation"/>
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation"/>
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation"/>
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#VariationSet"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#LoadHistory"/>
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory"/>
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#ReferenceData"/>
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/PerpetualProduct#UsageHistory"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,1790 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "https://w3id.org/circularfactory/PerpetualProduct", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/circularfactory/Core", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "en" : "The Circular Factory Product Ontology"
+    },
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "version" : "0.0.9",
+    "author" : [ "https://orcid.org/0009-0002-4321-3391" ],
+    "labels" : {
+      "en" : "Circular Factory Product Ontology"
+    },
+    "comments" : {
+      "en" : "The product ontology defines central concepts and relations of the product within the circular factory."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0009-0002-4321-3391",
+        "type" : "iri"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-28",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "product",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/circularfactory/PerpetualProduct#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.9",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Circular Factory Product Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "62",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReferenceSystemElement",
+      "undefined" : "Reference System Element"
+    },
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EmbodimentCharacteristic",
+      "undefined" : "Embodiment Characteristic"
+    },
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ManufacturingHistory",
+      "undefined" : "Manufacturing History"
+    },
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SystemRequirement",
+      "undefined" : "System Requirement"
+    },
+    "subClasses" : [ "36", "38" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpectedBehaviour",
+      "undefined" : "Expected Behaviour"
+    },
+    "id" : "52"
+  }, {
+    "instances" : 0,
+    "union" : [ "57", "58", "19", "30" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "56"
+  }, {
+    "instances" : 0,
+    "union" : [ "60", "61" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "62",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonFunctionalRequirement",
+      "undefined" : "Non Functional Requirement"
+    },
+    "id" : "36",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#Embodiment",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Embodiment",
+      "undefined" : "Embodiment"
+    },
+    "id" : "34"
+  }, {
+    "instances" : 0,
+    "union" : [ "29", "16" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EmbodimentDegradation",
+      "undefined" : "Embodiment Degradation"
+    },
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ValidationNeed",
+      "undefined" : "Validation Need"
+    },
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StakeholderObjective",
+      "undefined" : "Stakeholder Objective"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#ComponentType",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComponentType",
+      "undefined" : "Component Type"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CarryoverVariation",
+      "undefined" : "Carryover Variation"
+    },
+    "id" : "32",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BoundaryCondition",
+      "undefined" : "Boundary Condition"
+    },
+    "id" : "83"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#Component",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Component",
+      "undefined" : "Component"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#Geometry",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Geometry",
+      "undefined" : "Geometry"
+    },
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#VariationSet",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VariationSet",
+      "undefined" : "Variation Set"
+    },
+    "id" : "26",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionalRequirement",
+      "undefined" : "Functional Requirement"
+    },
+    "id" : "38",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#SystemContext",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SystemContext",
+      "undefined" : "System Context"
+    },
+    "id" : "84"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#UseCase",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UseCase",
+      "undefined" : "Use Case"
+    },
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#Variation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variation",
+      "undefined" : "Variation"
+    },
+    "subClasses" : [ "41", "26", "21", "32" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StakeholderBenefit",
+      "undefined" : "Stakeholder Benefit"
+    },
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#ReferenceData",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReferenceData",
+      "undefined" : "Reference Data"
+    },
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#Stakeholder",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Stakeholder",
+      "undefined" : "Stakeholder"
+    },
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#ProductType",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductType",
+      "undefined" : "Product Type"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#UsageHistory",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UsageHistory",
+      "undefined" : "Usage History"
+    },
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReferenceSystem",
+      "undefined" : "Reference System"
+    },
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#ProductGeneration",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductGeneration",
+      "undefined" : "Product Generation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrincipleVariation",
+      "undefined" : "Principle Variation"
+    },
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EmbodimentProperty",
+      "undefined" : "Embodiment Property"
+    },
+    "id" : "91"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#LoadHistory",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LoadHistory",
+      "undefined" : "Load History"
+    },
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#AttributeVariation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttributeVariation",
+      "undefined" : "Attribute Variation"
+    },
+    "id" : "41",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserAndCustomerScenario",
+      "undefined" : "User And Customer Scenario"
+    },
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#Workpiece",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Workpiece",
+      "undefined" : "Workpiece"
+    },
+    "subClasses" : [ "29", "16" ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#Assembly",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Assembly",
+      "undefined" : "Assembly"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#AssemblyType",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AssemblyType",
+      "undefined" : "Assembly Type"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#SystemElement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SystemElement",
+      "undefined" : "System Element"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionalBehaviour",
+      "undefined" : "Functional Behaviour"
+    },
+    "id" : "94"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StakeholderNeed",
+      "undefined" : "Stakeholder Need"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#Material",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material",
+      "undefined" : "Material"
+    },
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReliabilityPrediction",
+      "undefined" : "Reliability Prediction"
+    },
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#Product",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product",
+      "undefined" : "Product"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#Function",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Function",
+      "undefined" : "Function"
+    },
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#FinishedProduct",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FinishedProduct",
+      "undefined" : "Finished Product"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#FailureMode",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FailureMode",
+      "undefined" : "Failure Mode"
+    },
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ValidationSystem",
+      "undefined" : "Validation System"
+    },
+    "id" : "79"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "deriveStakeholderObjective",
+      "undefined" : "derive stakeholder objective"
+    },
+    "minCardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasComponentType",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasComponentType",
+      "undefined" : "has component type"
+    },
+    "minCardinality" : "1",
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfItem",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "composedOfItem",
+      "undefined" : "composed of item"
+    },
+    "minCardinality" : "1",
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "systemElementHasProductGeneration",
+      "undefined" : "system element has product generation"
+    },
+    "cardinality" : "1",
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasReferenceData",
+      "undefined" : "has reference data"
+    },
+    "minCardinality" : "1",
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#hasProductType",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasProductType",
+      "undefined" : "has product type"
+    },
+    "cardinality" : "1",
+    "domain" : "14",
+    "attributes" : [ "object", "external" ],
+    "id" : "23"
+  }, {
+    "range" : "22",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "17",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "22",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasEmbodiment",
+      "undefined" : "has embodiment"
+    },
+    "cardinality" : "1",
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "range" : "37",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "22",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "37",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasSystemElement",
+      "undefined" : "has system element"
+    },
+    "minCardinality" : "1",
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasEmbodimentDegradation",
+      "undefined" : "has embodiment degradation"
+    },
+    "cardinality" : "1",
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "traceToEmbodimentCharacteristic",
+      "undefined" : "trace to embodiment characteristic"
+    },
+    "minCardinality" : "1",
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasFailureMode",
+      "undefined" : "has failure mode"
+    },
+    "minCardinality" : "1",
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "isRealizedInUseCase",
+      "undefined" : "is realized in use case"
+    },
+    "minCardinality" : "1",
+    "domain" : "50",
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasStakeholder",
+      "undefined" : "has stakeholder"
+    },
+    "minCardinality" : "1",
+    "domain" : "54",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "range" : "58",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "allocateToSystemElement",
+      "undefined" : "allocate to system element"
+    },
+    "minCardinality" : "1",
+    "domain" : "50",
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "composedOfStakeholderBenefit",
+      "undefined" : "composed of stakeholder benefit"
+    },
+    "minCardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "range" : "19",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "58",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "traceToUserAndCustomerScenario",
+      "undefined" : "trace to user and customer scenario"
+    },
+    "minCardinality" : "1",
+    "domain" : "70",
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "range" : "30",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "58",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "62",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "73"
+  }, {
+    "range" : "19",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "satisfyFunctionalRequirement",
+      "undefined" : "satisfy functional requirement"
+    },
+    "minCardinality" : "1",
+    "domain" : "50",
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasStakeholderNeed",
+      "undefined" : "has stakeholder need"
+    },
+    "minCardinality" : "1",
+    "domain" : "55",
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#isVerifiedAndValidatedBy",
+    "inverse" : "80",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "isVerifiedAndValidatedBy",
+      "undefined" : "is verified and validated by"
+    },
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "composedOfExpectation",
+      "undefined" : "composed of expectation"
+    },
+    "minCardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "deriveFromBoundaryCondition",
+      "undefined" : "derive from boundary condition"
+    },
+    "minCardinality" : "1",
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "composedOfReferenceSystemElement",
+      "undefined" : "composed of reference system element"
+    },
+    "minCardinality" : "1",
+    "domain" : "86",
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "embodimentComposedOf",
+      "undefined" : "embodiment composed of"
+    },
+    "minCardinality" : "1",
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "allocateToValidationNeed",
+      "undefined" : "allocate to validation need"
+    },
+    "minCardinality" : "1",
+    "domain" : "51",
+    "attributes" : [ "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#hasAssemblyType",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasAssemblyType",
+      "undefined" : "has assembly type"
+    },
+    "cardinality" : "1",
+    "domain" : "16",
+    "attributes" : [ "object", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isDefinedByEmbodimentCharacteristic",
+      "undefined" : "is defined by embodiment characteristic"
+    },
+    "minCardinality" : "1",
+    "domain" : "91",
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "hasValidationNeed",
+      "undefined" : "has validation need"
+    },
+    "minCardinality" : "1",
+    "domain" : "79",
+    "attributes" : [ "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "deriveFunctionalBehaviour",
+      "undefined" : "derive functional behaviour"
+    },
+    "minCardinality" : "1",
+    "domain" : "79",
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "satisfyNonFunctionalRequirement",
+      "undefined" : "satisfy non functional requirement"
+    },
+    "minCardinality" : "1",
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "traceToStakeholder",
+      "undefined" : "trace to stakeholder"
+    },
+    "minCardinality" : "1",
+    "domain" : "83",
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfAssembly",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "composedOfAssembly",
+      "undefined" : "composed of assembly"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "referenceSystemHasProductGeneration",
+      "undefined" : "reference system has product generation"
+    },
+    "cardinality" : "1",
+    "domain" : "86",
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "refineStakeholderObjective",
+      "undefined" : "refine stakeholder objective"
+    },
+    "minCardinality" : "1",
+    "domain" : "51",
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "allocateTestModelToSystemElement",
+      "undefined" : "allocate test model to system element"
+    },
+    "minCardinality" : "1",
+    "domain" : "79",
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "composedOfUseCase",
+      "undefined" : "composed of use case"
+    },
+    "minCardinality" : "1",
+    "domain" : "54",
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "composedOfSystemContext",
+      "undefined" : "composed of system context"
+    },
+    "cardinality" : "1",
+    "domain" : "54",
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#hasProductGeneration",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasProductGeneration",
+      "undefined" : "has product generation"
+    },
+    "cardinality" : "1",
+    "domain" : "24",
+    "attributes" : [ "object", "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "allocateToExpectedBehaviour",
+      "undefined" : "allocate to expected behaviour"
+    },
+    "minCardinality" : "1",
+    "domain" : "50",
+    "attributes" : [ "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "traceToSystemContext",
+      "undefined" : "trace to system context"
+    },
+    "cardinality" : "1",
+    "domain" : "83",
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "isDefinedByEmbodimentProperty",
+      "undefined" : "is defined by embodiment property"
+    },
+    "minCardinality" : "1",
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "embodimentDegradationComposedOf",
+      "undefined" : "embodiment degradation composed of"
+    },
+    "minCardinality" : "1",
+    "domain" : "45",
+    "attributes" : [ "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "traceToEmbodimentDegradation",
+      "undefined" : "trace to embodiment degradation"
+    },
+    "cardinality" : "1",
+    "domain" : "70",
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "traceToFailureMode",
+      "undefined" : "trace to failure mode"
+    },
+    "minCardinality" : "1",
+    "domain" : "70",
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#referenceSystemElementHasPreviousGeneration",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "referenceSystemElementHasPreviousGeneration",
+      "undefined" : "reference system element has previous generation"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasComponent",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasComponent",
+      "undefined" : "has component"
+    },
+    "minCardinality" : "1",
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasReferenceSystemElement",
+      "undefined" : "has reference system element"
+    },
+    "minCardinality" : "1",
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#hasComponentType",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasComponentType",
+      "undefined" : "has component type"
+    },
+    "cardinality" : "1",
+    "domain" : "29",
+    "attributes" : [ "object", "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasVariation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasVariation",
+      "undefined" : "has variation"
+    },
+    "minCardinality" : "1",
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#isTracedFromSystemElement",
+    "inverse" : "116",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isTracedFromSystemElement",
+      "undefined" : "is traced from system element"
+    },
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "range" : "32",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "21",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "26",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "21",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "hasReliabilityPrediction",
+      "undefined" : "has reliability prediction"
+    },
+    "cardinality" : "1",
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "121"
+  }, {
+    "range" : "26",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "26",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "79",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "36",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "allocateToEmbodimentDegradation",
+      "undefined" : "allocate to embodiment degradation"
+    },
+    "minCardinality" : "1",
+    "domain" : "48",
+    "attributes" : [ "object" ],
+    "id" : "126"
+  }, {
+    "range" : "29",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#hasPreviousGeneration",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasPreviousGeneration",
+      "undefined" : "has previous generation"
+    },
+    "domain" : "11",
+    "attributes" : [ "object", "external" ],
+    "id" : "128"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "traceToSystemRequirement",
+      "undefined" : "trace to system requirement"
+    },
+    "minCardinality" : "1",
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#hasFinalWorkpiece",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasFinalWorkpiece",
+      "undefined" : "has final workpiece"
+    },
+    "cardinality" : "1",
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "verifyAndValidateSystemRequirement",
+      "undefined" : "verify and validate system requirement"
+    },
+    "minCardinality" : "1",
+    "domain" : "79",
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "traceBehaviourToSystemRequirement",
+      "undefined" : "trace behaviour to system requirement"
+    },
+    "minCardinality" : "1",
+    "domain" : "52",
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "satisfyExpectedBehaviour",
+      "undefined" : "satisfy expected behaviour"
+    },
+    "minCardinality" : "1",
+    "domain" : "94",
+    "attributes" : [ "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#composedOfVariation",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "composedOfVariation",
+      "undefined" : "composed of variation"
+    },
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "hasFunctionalBehaviour",
+      "undefined" : "has functional behaviour"
+    },
+    "minCardinality" : "1",
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement",
+    "baseIri" : "https://w3id.org/circularfactory/PerpetualProduct",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "deriveFromStakeholderRequirement",
+      "undefined" : "derive from stakeholder requirement"
+    },
+    "minCardinality" : "1",
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "135"
+  } ]
+}

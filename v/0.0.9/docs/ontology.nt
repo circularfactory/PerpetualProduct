@@ -1,0 +1,947 @@
+<https://w3id.org/circularfactory/PerpetualProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/circularfactory/PerpetualProduct> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/circularfactory/PerpetualProduct/0.0.9> .
+<https://w3id.org/circularfactory/PerpetualProduct> <http://purl.org/dc/terms/created> "2026-04-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/circularfactory/PerpetualProduct> <http://purl.org/dc/terms/creator> <https://orcid.org/0009-0002-4321-3391> .
+<https://w3id.org/circularfactory/PerpetualProduct> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/circularfactory/PerpetualProduct> <http://purl.org/dc/terms/title> "The Circular Factory Product Ontology"@en .
+<https://w3id.org/circularfactory/PerpetualProduct> <http://purl.org/vocab/vann/preferredNamespacePrefix> "product" .
+<https://w3id.org/circularfactory/PerpetualProduct> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/circularfactory/PerpetualProduct#> .
+<https://w3id.org/circularfactory/PerpetualProduct> <http://www.w3.org/2000/01/rdf-schema#comment> "The product ontology defines central concepts and relations of the product within the circular factory."@en .
+<https://w3id.org/circularfactory/PerpetualProduct> <http://www.w3.org/2000/01/rdf-schema#label> "Circular Factory Product Ontology"@en .
+<https://w3id.org/circularfactory/PerpetualProduct> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.9" .
+<https://w3id.org/circularfactory/PerpetualProduct> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/circularfactory/Core#hasAssemblyType
+<https://w3id.org/circularfactory/Core#hasAssemblyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/Core#hasAssemblyType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#Assembly> .
+<https://w3id.org/circularfactory/Core#hasAssemblyType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#AssemblyType> .
+<https://w3id.org/circularfactory/Core#hasAssemblyType> <http://www.w3.org/2000/01/rdf-schema#label> "has assembly type" .
+# 
+# https://w3id.org/circularfactory/Core#hasComponentType
+<https://w3id.org/circularfactory/Core#hasComponentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/Core#hasComponentType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#Component> .
+<https://w3id.org/circularfactory/Core#hasComponentType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#ComponentType> .
+<https://w3id.org/circularfactory/Core#hasComponentType> <http://www.w3.org/2000/01/rdf-schema#label> "has component type" .
+# 
+# https://w3id.org/circularfactory/Core#hasFinalWorkpiece
+<https://w3id.org/circularfactory/Core#hasFinalWorkpiece> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/Core#hasFinalWorkpiece> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#Workpiece> .
+<https://w3id.org/circularfactory/Core#hasFinalWorkpiece> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#FinishedProduct> .
+<https://w3id.org/circularfactory/Core#hasFinalWorkpiece> <http://www.w3.org/2000/01/rdf-schema#label> "has final workpiece" .
+# 
+# https://w3id.org/circularfactory/Core#hasPreviousGeneration
+<https://w3id.org/circularfactory/Core#hasPreviousGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/Core#hasPreviousGeneration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#ProductGeneration> .
+<https://w3id.org/circularfactory/Core#hasPreviousGeneration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#ProductGeneration> .
+<https://w3id.org/circularfactory/Core#hasPreviousGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "has previous generation" .
+# 
+# https://w3id.org/circularfactory/Core#hasProductGeneration
+<https://w3id.org/circularfactory/Core#hasProductGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/Core#hasProductGeneration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#ProductType> .
+<https://w3id.org/circularfactory/Core#hasProductGeneration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#ProductGeneration> .
+<https://w3id.org/circularfactory/Core#hasProductGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "has product generation" .
+# 
+# https://w3id.org/circularfactory/Core#hasProductType
+<https://w3id.org/circularfactory/Core#hasProductType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/Core#hasProductType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#Product> .
+<https://w3id.org/circularfactory/Core#hasProductType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#ProductType> .
+<https://w3id.org/circularfactory/Core#hasProductType> <http://www.w3.org/2000/01/rdf-schema#label> "has product type" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement
+<https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#SystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement> <http://www.w3.org/2000/01/rdf-schema#label> "allocate test model to system element" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#FailureMode> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#label> "allocate to embodiment degradation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#Function> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "allocate to expected behaviour" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#Function> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#SystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement> <http://www.w3.org/2000/01/rdf-schema#label> "allocate to system element" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#UseCase> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed> .
+<https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed> <http://www.w3.org/2000/01/rdf-schema#label> "allocate to validation need" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#composedOfAssembly
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfAssembly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfAssembly> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#Assembly> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfAssembly> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#Assembly> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfAssembly> <http://www.w3.org/2000/01/rdf-schema#label> "composed of assembly" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation> <http://www.w3.org/2000/01/rdf-schema#label> "composed of expectation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#composedOfItem
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfItem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#SystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfItem> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/Core#Component> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/Core#Assembly> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfItem> <http://www.w3.org/2000/01/rdf-schema#label> "composed of item" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement> <http://www.w3.org/2000/01/rdf-schema#label> "composed of reference system element" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "composed of stakeholder benefit" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#SystemContext> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext> <http://www.w3.org/2000/01/rdf-schema#label> "composed of system context" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#UseCase> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase> <http://www.w3.org/2000/01/rdf-schema#label> "composed of use case" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#composedOfVariation
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfVariation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfVariation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#VariationSet> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfVariation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#Variation> .
+<https://w3id.org/circularfactory/PerpetualProduct#composedOfVariation> <http://www.w3.org/2000/01/rdf-schema#label> "composed of variation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition> <http://www.w3.org/2000/01/rdf-schema#label> "derive from boundary condition" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "derive from stakeholder requirement" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "derive functional behaviour" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective
+<https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective> .
+<https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective> <http://www.w3.org/2000/01/rdf-schema#label> "derive stakeholder objective" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf
+<https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#Embodiment> .
+<https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#Material> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#Geometry> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf> <http://www.w3.org/2000/01/rdf-schema#label> "embodiment composed of" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf
+<https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation> .
+<https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#UsageHistory> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#ReferenceData> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#LoadHistory> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf> <http://www.w3.org/2000/01/rdf-schema#label> "embodiment degradation composed of" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasComponent
+<https://w3id.org/circularfactory/PerpetualProduct#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#Assembly> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasComponent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#Component> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasComponent> <http://www.w3.org/2000/01/rdf-schema#label> "has component" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasComponentType
+<https://w3id.org/circularfactory/PerpetualProduct#hasComponentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasComponentType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#AssemblyType> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasComponentType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#ComponentType> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasComponentType> <http://www.w3.org/2000/01/rdf-schema#label> "has component type" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment
+<https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#ComponentType> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#Embodiment> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment> <http://www.w3.org/2000/01/rdf-schema#label> "has embodiment" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation
+<https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#Embodiment> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#label> "has embodiment degradation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode
+<https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#ComponentType> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#FailureMode> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode> <http://www.w3.org/2000/01/rdf-schema#label> "has failure mode" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour
+<https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#AssemblyType> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "has functional behaviour" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData
+<https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#Product> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#ReferenceData> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData> <http://www.w3.org/2000/01/rdf-schema#label> "has reference data" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement
+<https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#Variation> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement> <http://www.w3.org/2000/01/rdf-schema#label> "has reference system element" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction
+<https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#Workpiece> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction> <http://www.w3.org/2000/01/rdf-schema#label> "has reliability prediction" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder
+<https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#Stakeholder> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder> <http://www.w3.org/2000/01/rdf-schema#label> "has stakeholder" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed
+<https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#Stakeholder> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed> <http://www.w3.org/2000/01/rdf-schema#label> "has stakeholder need" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement
+<https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#ProductType> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#SystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement> <http://www.w3.org/2000/01/rdf-schema#label> "has system element" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed
+<https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed> <http://www.w3.org/2000/01/rdf-schema#label> "has validation need" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#hasVariation
+<https://w3id.org/circularfactory/PerpetualProduct#hasVariation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasVariation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#SystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasVariation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#Variation> .
+<https://w3id.org/circularfactory/PerpetualProduct#hasVariation> <http://www.w3.org/2000/01/rdf-schema#label> "has variation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic
+<https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic> .
+<https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "is defined by embodiment characteristic" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty
+<https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#Embodiment> .
+<https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty> <http://www.w3.org/2000/01/rdf-schema#label> "is defined by embodiment property" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase
+<https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#Function> .
+<https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#UseCase> .
+<https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase> <http://www.w3.org/2000/01/rdf-schema#label> "is realized in use case" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#isTracedFromSystemElement
+<https://w3id.org/circularfactory/PerpetualProduct#isTracedFromSystemElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#isTracedFromSystemElement> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#isTracedFromSystemElement> <http://www.w3.org/2000/01/rdf-schema#label> "is traced from system element" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#isVerifiedAndValidatedBy
+<https://w3id.org/circularfactory/PerpetualProduct#isVerifiedAndValidatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#isVerifiedAndValidatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#isVerifiedAndValidatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is verified and validated by" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#referenceSystemElementHasPreviousGeneration
+<https://w3id.org/circularfactory/PerpetualProduct#referenceSystemElementHasPreviousGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#referenceSystemElementHasPreviousGeneration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#referenceSystemElementHasPreviousGeneration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#ProductGeneration> .
+<https://w3id.org/circularfactory/PerpetualProduct#referenceSystemElementHasPreviousGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "reference system element has previous generation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration
+<https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem> .
+<https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#ProductGeneration> .
+<https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "reference system has product generation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective
+<https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#UseCase> .
+<https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective> .
+<https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective> <http://www.w3.org/2000/01/rdf-schema#label> "refine stakeholder objective" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour> .
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour> .
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "satisfy expected behaviour" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#Function> .
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "satisfy functional requirement" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#SystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "satisfy non functional requirement" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration
+<https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#SystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#ProductGeneration> .
+<https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "system element has product generation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement
+<https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "trace behaviour to system requirement" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic
+<https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#Variation> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "trace to embodiment characteristic" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation
+<https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#label> "trace to embodiment degradation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode
+<https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#FailureMode> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode> <http://www.w3.org/2000/01/rdf-schema#label> "trace to failure mode" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder
+<https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#Stakeholder> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder> <http://www.w3.org/2000/01/rdf-schema#label> "trace to stakeholder" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext
+<https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#SystemContext> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext> <http://www.w3.org/2000/01/rdf-schema#label> "trace to system context" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement
+<https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#SystemElement> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "trace to system requirement" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario
+<https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario> .
+<https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario> <http://www.w3.org/2000/01/rdf-schema#label> "trace to user and customer scenario" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement
+<https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> .
+<https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "verify and validate system requirement" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/circularfactory/Core#Assembly
+<https://w3id.org/circularfactory/Core#Assembly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/Core#Assembly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Workpiece> .
+<https://w3id.org/circularfactory/Core#Assembly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasComponent> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#Assembly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/Core#hasAssemblyType> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#Assembly> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/circularfactory/Core#Component> .
+<https://w3id.org/circularfactory/Core#Assembly> <http://www.w3.org/2000/01/rdf-schema#label> "Assembly" .
+# 
+# https://w3id.org/circularfactory/Core#AssemblyType
+<https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasComponentType> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasFunctionalBehaviour> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/circularfactory/Core#ComponentType> .
+<https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/2000/01/rdf-schema#label> "Assembly Type" .
+# 
+# https://w3id.org/circularfactory/Core#Component
+<https://w3id.org/circularfactory/Core#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/Core#Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Workpiece> .
+<https://w3id.org/circularfactory/Core#Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/Core#hasComponentType> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#Component> <http://www.w3.org/2000/01/rdf-schema#label> "Component" .
+# 
+# https://w3id.org/circularfactory/Core#ComponentType
+<https://w3id.org/circularfactory/Core#ComponentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/Core#ComponentType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasFailureMode> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#ComponentType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasEmbodiment> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#ComponentType> <http://www.w3.org/2000/01/rdf-schema#label> "Component Type" .
+# 
+# https://w3id.org/circularfactory/Core#FinishedProduct
+<https://w3id.org/circularfactory/Core#FinishedProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/Core#FinishedProduct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Product> .
+<https://w3id.org/circularfactory/Core#FinishedProduct> <http://www.w3.org/2000/01/rdf-schema#label> "Finished Product" .
+# 
+# https://w3id.org/circularfactory/Core#Product
+<https://w3id.org/circularfactory/Core#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/Core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasReferenceData> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/Core#hasProductType> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product" .
+# 
+# https://w3id.org/circularfactory/Core#ProductGeneration
+<https://w3id.org/circularfactory/Core#ProductGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/Core#ProductGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "Product Generation" .
+# 
+# https://w3id.org/circularfactory/Core#ProductType
+<https://w3id.org/circularfactory/Core#ProductType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/Core#ProductType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasSystemElement> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#ProductType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/Core#hasProductGeneration> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#ProductType> <http://www.w3.org/2000/01/rdf-schema#label> "Product Type" .
+# 
+# https://w3id.org/circularfactory/Core#Workpiece
+<https://w3id.org/circularfactory/Core#Workpiece> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/Core#Workpiece> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/Core#hasFinalWorkpiece> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#Workpiece> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasReliabilityPrediction> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/Core#Workpiece> <http://www.w3.org/2000/01/rdf-schema#label> "Workpiece" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#AttributeVariation
+<https://w3id.org/circularfactory/PerpetualProduct#AttributeVariation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#AttributeVariation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/PerpetualProduct#Variation> .
+<https://w3id.org/circularfactory/PerpetualProduct#AttributeVariation> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute Variation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition
+<https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#traceToStakeholder> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#traceToSystemContext> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#BoundaryCondition> <http://www.w3.org/2000/01/rdf-schema#label> "Boundary Condition" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation
+<https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/PerpetualProduct#Variation> .
+<https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation> <http://www.w3.org/2000/01/rdf-schema#label> "Carryover Variation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#Embodiment
+<https://w3id.org/circularfactory/PerpetualProduct#Embodiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#Embodiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#embodimentComposedOf> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#Embodiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentProperty> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#Embodiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasEmbodimentDegradation> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#Embodiment> <http://www.w3.org/2000/01/rdf-schema#label> "Embodiment" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic
+<https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#EmbodimentCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "Embodiment Characteristic" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation
+<https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#embodimentDegradationComposedOf> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#EmbodimentDegradation> <http://www.w3.org/2000/01/rdf-schema#label> "Embodiment Degradation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty
+<https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#isDefinedByEmbodimentCharacteristic> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#EmbodimentProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Embodiment Property" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour
+<https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#traceBehaviourToSystemRequirement> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> .
+<https://w3id.org/circularfactory/PerpetualProduct#ExpectedBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "Expected Behaviour" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#FailureMode
+<https://w3id.org/circularfactory/PerpetualProduct#FailureMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#FailureMode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#allocateToEmbodimentDegradation> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#FailureMode> <http://www.w3.org/2000/01/rdf-schema#label> "Failure Mode" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#Function
+<https://w3id.org/circularfactory/PerpetualProduct#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#allocateToExpectedBehaviour> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#allocateToSystemElement> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#isRealizedInUseCase> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#satisfyFunctionalRequirement> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#Function> <http://www.w3.org/2000/01/rdf-schema#label> "Function" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour
+<https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#satisfyExpectedBehaviour> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#FunctionalBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "Functional Behaviour" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement
+<https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#FunctionalRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "Functional Requirement" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#Geometry
+<https://w3id.org/circularfactory/PerpetualProduct#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#LoadHistory
+<https://w3id.org/circularfactory/PerpetualProduct#LoadHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#LoadHistory> <http://www.w3.org/2000/01/rdf-schema#label> "Load History" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory
+<https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturing History" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#Material
+<https://w3id.org/circularfactory/PerpetualProduct#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement
+<https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> .
+<https://w3id.org/circularfactory/PerpetualProduct#NonFunctionalRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "Non Functional Requirement" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation
+<https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/PerpetualProduct#Variation> .
+<https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation> <http://www.w3.org/2000/01/rdf-schema#label> "Principle Variation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#ReferenceData
+<https://w3id.org/circularfactory/PerpetualProduct#ReferenceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#ReferenceData> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Data" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem
+<https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#composedOfReferenceSystemElement> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#referenceSystemHasProductGeneration> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Reference System" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement
+<https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#ReferenceSystemElement> <http://www.w3.org/2000/01/rdf-schema#label> "Reference System Element" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction
+<https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#traceToFailureMode> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#traceToUserAndCustomerScenario> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentDegradation> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#ReliabilityPrediction> <http://www.w3.org/2000/01/rdf-schema#label> "Reliability Prediction" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#Stakeholder
+<https://w3id.org/circularfactory/PerpetualProduct#Stakeholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#Stakeholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasStakeholderNeed> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#Stakeholder> <http://www.w3.org/2000/01/rdf-schema#label> "Stakeholder" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit
+<https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#StakeholderBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "Stakeholder Benefit" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed
+<https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#composedOfExpectation> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#composedOfStakeholderBenefit> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#deriveStakeholderObjective> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#StakeholderNeed> <http://www.w3.org/2000/01/rdf-schema#label> "Stakeholder Need" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective
+<https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#StakeholderObjective> <http://www.w3.org/2000/01/rdf-schema#label> "Stakeholder Objective" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#SystemContext
+<https://w3id.org/circularfactory/PerpetualProduct#SystemContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#SystemContext> <http://www.w3.org/2000/01/rdf-schema#label> "System Context" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#SystemElement
+<https://w3id.org/circularfactory/PerpetualProduct#SystemElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#SystemElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#composedOfItem> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#SystemElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasVariation> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#SystemElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#satisfyNonFunctionalRequirement> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#SystemElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#traceToSystemRequirement> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#SystemElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#systemElementHasProductGeneration> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#SystemElement> <http://www.w3.org/2000/01/rdf-schema#label> "System Element" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement
+<https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#deriveFromBoundaryCondition> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#deriveFromStakeholderRequirement> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#SystemRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "System Requirement" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#UsageHistory
+<https://w3id.org/circularfactory/PerpetualProduct#UsageHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#UsageHistory> <http://www.w3.org/2000/01/rdf-schema#label> "Usage History" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#UseCase
+<https://w3id.org/circularfactory/PerpetualProduct#UseCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#UseCase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#allocateToValidationNeed> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#UseCase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#refineStakeholderObjective> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#UseCase> <http://www.w3.org/2000/01/rdf-schema#label> "Use Case" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario
+<https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#composedOfUseCase> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasStakeholder> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#composedOfSystemContext> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#UserAndCustomerScenario> <http://www.w3.org/2000/01/rdf-schema#label> "User And Customer Scenario" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed
+<https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#ValidationNeed> <http://www.w3.org/2000/01/rdf-schema#label> "Validation Need" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem
+<https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#allocateTestModelToSystemElement> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#deriveFunctionalBehaviour> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasValidationNeed> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#verifyAndValidateSystemRequirement> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#ValidationSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Validation System" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#Variation
+<https://w3id.org/circularfactory/PerpetualProduct#Variation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#hasReferenceSystemElement> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/circularfactory/PerpetualProduct#traceToEmbodimentCharacteristic> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/PerpetualProduct#Variation> <http://www.w3.org/2000/01/rdf-schema#label> "Variation" .
+# 
+# https://w3id.org/circularfactory/PerpetualProduct#VariationSet
+<https://w3id.org/circularfactory/PerpetualProduct#VariationSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/PerpetualProduct#VariationSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/PerpetualProduct#Variation> .
+<https://w3id.org/circularfactory/PerpetualProduct#VariationSet> <http://www.w3.org/2000/01/rdf-schema#label> "Variation Set" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment" .
+# 
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#label> "label" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid66 <http://www.w3.org/2002/07/owl#members> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#VariationSet> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#PrincipleVariation> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#CarryoverVariation> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#AttributeVariation> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid71 <http://www.w3.org/2002/07/owl#members> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#UsageHistory> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#ReferenceData> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#ManufacturingHistory> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/circularfactory/PerpetualProduct#LoadHistory> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
